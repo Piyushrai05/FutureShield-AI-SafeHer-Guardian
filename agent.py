@@ -58,6 +58,13 @@ if UAGENTS_AVAILABLE:
         port=config.AGENT_PORT,
         endpoint=endpoint_param,
         mailbox=True if not endpoint_param else config.MAILBOX_ENABLED,
+        readme_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.md"),
+        description=(
+            "SafeHer Guardian: AI-powered safety assistant providing safety-first navigation, "
+            "safe haven discovery, consent-based guardian monitoring, and India 112 emergency guidance."
+        ),
+        publish_agent_details=True,
+        report_events=True,
     )
 
     # ── Chat Protocol handler ─────────────────────────────────
