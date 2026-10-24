@@ -1,0 +1,26 @@
+# FutureShield AI — SafeHer Guardian
+# Requirements — Python 3.11+
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Note: uagents and uagents-core bring in cosmpy, pydantic, uvicorn etc.
+
+# ── Core agent framework ──────────────────────────────────────
+uagents>=0.26.1
+uagents-core>=0.4.12
+
+# ── LLM (OpenAI-compatible client for ASI:One) ────────────────
+openai>=1.0.0
+
+# ── Configuration ─────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── HTTP client ───────────────────────────────────────────────
+requests>=2.31.0
+
+# ── Data validation (pinned range to match uagents requirement) ─
+pydantic>=2.8,<3.0
+
+# ── Testing ───────────────────────────────────────────────────
+pytest>=8.0.0
